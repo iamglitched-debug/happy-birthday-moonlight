@@ -142,11 +142,11 @@
     carouselInitialized = true;
     
     const imageUrls = [
-      "images/hiya1.jpg",
-      "images/hiya2.jpg",
-      "images/hiya3.jpg",
-      "images/hiya4.jpg",
-      "images/hiya5.jpg",
+      "hiya1.jpg",
+      "hiya2.jpg",
+      "hiya3.jpg",
+      "hiya4.jpg",
+      "hiya5.jpg",
     ];
     
     const count = imageUrls.length;
