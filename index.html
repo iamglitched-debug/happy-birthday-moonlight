@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy 16th, Moonlight 🌙</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background stars -->
+  <div class="bg-stars"></div>
+
+  <!-- Confetti layer -->
+  <div id="confettiLayer"></div>
+
+  <main class="page">
+
+    <!-- Stage 0: intro -->
+    <section id="introStage" class="stage stage--center active">
+      <div class="intro-card">
+        <h1>For Hiya · Moonlight</h1>
+        <p>Turn the lights on to start your little birthday universe.</p>
+        <button id="lightsButton" class="btn btn-primary">
+          ✨ Turn lights on
+        </button>
+      </div>
+    </section>
+
+    <!-- Stage 1: flowers forming cake -->
+    <section id="flowerStage" class="stage">
+      <div class="flower-stage-inner">
+        <div class="flower-cake-wrapper">
+          <div class="flower-hint">(this is supposed to make a cake out of flower😭😭😭)</div>
+          <div id="flowerCake" class="flower-cake"></div>
+        </div>
+
+        <div class="note-panel">
+          <h2>Just a little note for Moonlight</h2>
+          <!-- Static long note (you can edit this text) -->
+          <p id="noteText" class="note-text">
+Happy 16th, Moonlight. 💫  
+You’re one of the strongest people I know, and I seriously admire how you keep going
+even when life is chaotic and loud.  
+
+I hope this year feels like proof that every dream you have isn’t “too much” — it’s exactly what you deserve.  
+
+No matter how far you go, remember there is at least one person out here quietly rooting for you, always.
+          </p>
+          <button id="cameraRollButton" class="btn btn-secondary">
+            📷 Camera roll
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stage 2: 3D circular image wheel -->
+    <section id="carouselStage" class="stage">
+      <div class="carousel-layout">
+        <div class="carousel-header">
+          <h2>Camera roll</h2>
+          fuked this up a bit😭😭 , you can drag this i guess....😭</p>
+        </div>
+
+        <div id="carouselContainer" class="carousel-container">
+          <div id="photoWheel" class="photo-wheel">
+            <!-- items are added by JS -->
+          </div>
+        </div>
+
+        <button id="wishesButton" class="btn btn-primary wishes-button">
+          💌 Birthday wishes · click to open
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Stage 3: foldable pamphlet overlay -->
+  <div id="pamphletOverlay" class="overlay">
+    <div class="overlay-backdrop"></div>
+    <div class="pamphlet-scene">
+      <div class="pamphlet">
+        <div class="pamphlet-inner">
+          <!-- Left page -->
+          <div class="pamphlet-page pamphlet-page--left">
+            <div class="pamphlet-photo-frame">
+              <!-- Put her real photo here -->
+              <img src="images/hiya-main.jpg" alt="Hiya / Moonlight" />
+            </div>
+            <div class="pamphlet-cake-frame">
+              <!-- Put a cake image here -->
+              <img src="images/cake.jpg" alt="Birthday cake" />
+            </div>
+          </div>
+
+          <!-- Right page -->
+          <div class="pamphlet-page pamphlet-page--right">
+            <h2>Dear Moonlight,</h2>
+            <p>
+              Happy 16th, Hiya. 🌙<br><br>
+              You’re one of the strongest people I know, and I seriously admire how you keep going
+                  even when life is chaotic and loud.  
+              I don’t just want you to be okay — I want you to be wildly successful
+              and ridiculously happy. The kind of happy where one day you look
+              around and think, “wait… I actually did it.”
+            </p>
+            <p>
+              No matter how messy it gets, you’re not alone in it. I’ll always
+              be somewhere in the background, cheering for you, proud of the
+              person you already are and the one you’re becoming.
+            </p>
+            <p>Just in case nobody has told you this</p>
+            <p>thankyou for being born</p>
+            <p class="pamphlet-sign">
+              — from Rehan, the person who believes in your future a little too much.
+            </p>
+            <button id="closePamphlet" class="btn btn-secondary btn-small">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main logic -->
+  <script src="main.js"></script>
+</body>
+</html>
